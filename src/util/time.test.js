@@ -1,10 +1,10 @@
 import { time, checkTime } from './time';
 
 it('should return time', () => {
-  expect(time()).toMatch(/:/);
+  expect(time()).toHaveProperty('minute');
 });
 it('should return hours:minutes:seconds', () => {
-  expect(time()).toMatch(/\d+:\d+:\d+/);
+  expect(time()).toHaveProperty('hour');
 });
 
 it('should return 01', () => {
@@ -12,5 +12,5 @@ it('should return 01', () => {
 });
 
 it('should return 12', () => {
-  expect(checkTime(12)).toBe(12);
+  expect(checkTime(12)).toBe('12');
 });

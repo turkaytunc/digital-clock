@@ -12,7 +12,7 @@ export const ClockWrapper = () => {
   return (
     <div className="clock-wrapper-div">
       Hello
-      <div>time: {time()}</div>
+      <div>time: {time().hour}</div>
     </div>
   );
 };
