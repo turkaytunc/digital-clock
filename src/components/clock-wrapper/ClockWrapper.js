@@ -11,8 +11,10 @@ export const ClockWrapper = () => {
 
   return (
     <div className="clock-wrapper-div">
-      Hello
-      <div>time: {time().hour}</div>
+      Time
+      <div>
+        {time().hour} : {time().minute} : {time().second}
+      </div>
     </div>
   );
 };

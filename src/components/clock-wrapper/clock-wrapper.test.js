@@ -4,6 +4,6 @@ import { ClockWrapper } from './ClockWrapper';
 
 test('renders learn react link', () => {
   const { getByText } = render(<ClockWrapper />);
-  const linkElement = getByText(/Hello/i);
+  const linkElement = getByText(/Time/gi);
   expect(linkElement).toBeInTheDocument();
 });
