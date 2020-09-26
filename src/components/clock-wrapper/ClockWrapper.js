@@ -12,7 +12,7 @@ export const ClockWrapper = () => {
 
   return (
     <div className="clock-wrapper-div">
-      Time
+      Current Time
       <div className="time-wrapper-div">
         {time().hour} : {time().minute} : {time().second}
       </div>
